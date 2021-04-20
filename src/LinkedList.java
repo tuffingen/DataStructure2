@@ -26,16 +26,18 @@ public class LinkedList {
         if (first==null) {
             first = newNode;
             cont++;
+
         }
         else{
             first.next = newNode;
             Node last = first;
             while (last.next != null){
                 last = last.next;
+                cont++;
             }
             last.next = newNode;
-        }
 
+        }
     }
 
     /**
@@ -54,7 +56,7 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        return 0;
+        return cont;
         }
 
 

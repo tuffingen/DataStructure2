@@ -29,9 +29,13 @@ public class LinkedList {
         }
         else{
             first.next = newNode;
-            newNode = first;
+            Node last = first;
+            while (last.next != null){
+                last = last.next;
+            }
+            last.next = newNode;
         }
-        while (newNode.next != null);
+
     }
 
     /**

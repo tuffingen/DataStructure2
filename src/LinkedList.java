@@ -7,12 +7,13 @@
  */
 public class LinkedList {
     Node first;
-
+    private int cont = 0;
     /**
      * Constructor to create an empty list.
      */
     public LinkedList() {
         first = null;
+
     }
 
     /**
@@ -22,6 +23,15 @@ public class LinkedList {
      */
     public void addLast(Node newNode) {
 
+        if (first==null) {
+            first = newNode;
+            cont++;
+        }
+        else{
+            first.next = newNode;
+            newNode = first;
+        }
+        while (newNode.next != null);
     }
 
     /**
@@ -41,7 +51,8 @@ public class LinkedList {
      */
     public int size() {
         return 0;
-    }
+        }
+
 
     /**
      * returns true if the queue is empty.

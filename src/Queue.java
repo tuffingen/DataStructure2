@@ -12,14 +12,15 @@ public class Queue {
     }
 
     public void enqueue(String text) {
-        if (){
-            count++;
-        }
+        count++;
 
     }
 
     public String dequeue() {
-        return "";
+        count--;
+        return "Test";
+
+
     }
 
     public boolean isEmpty() {
@@ -27,6 +28,7 @@ public class Queue {
     }
 
     public int size() {
-        return 0;
+        return count;
+
     }
 }

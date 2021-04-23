@@ -6,12 +6,15 @@
  */
 public class Queue {
     // Need data structure....
-
+    private int count = 0;
     public Queue() {
 
     }
 
     public void enqueue(String text) {
+        if (){
+            count++;
+        }
 
     }
 
@@ -20,10 +23,10 @@ public class Queue {
     }
 
     public boolean isEmpty() {
-        return false;
+        return true;
     }
 
     public int size() {
-        return -1;
+        return 0;
     }
 }

@@ -36,7 +36,6 @@ public class LinkedList {
                 cont++;
             }
             last.next = newNode;
-
         }
     }
 
@@ -46,7 +45,11 @@ public class LinkedList {
      * @return
      */
     public Node removeFirst() {
-        return null;
+        cont--;
+        first.next = first;
+        return first;
+
+
     }
 
     /**
